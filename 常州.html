@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常州段</title>
+  <style>
+    /* 保留你原有的 body 样式，若需要优化图片显示可添加以下样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* 核心背景属性：确保图片完整显示 */
+      background-image: url(img/徐州底板.png); /* 你的图片路径 */
+      background-size: contain; /* 关键：按图片原始比例缩放，确保完整显示（不裁剪） */
+      background-position: center center; /* 图片在页面水平+垂直居中 */
+      background-attachment: fixed; /* 可选：滚动页面时图片固定不动（类似视差效果） */
+      min-height: 100vh; 
+    }
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景，提升文字可读性 */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+        .movie-cover {
+      width: 80%; /* 统一宽度，可根据需求调整 */
+      height: auto; /* 保持宽高比，避免变形 */
+      display: block; /* 消除图片默认 inline 带来的空隙 */
+      margin: 0 auto 30px; /* 水平居中 + 底部间距 */
+      border-radius: 4px; /* 可选：添加轻微圆角 */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 可选：添加阴影增强立体感 */
+    }
+    .header h1,h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+   /* 景点卡片列表 - 自动适配多屏，一行4张，响应式缩为2张/1张 */
+.spots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/* 景点卡片核心样式 */
+.spot-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* 鼠标悬浮动效 */
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+/* 景点图片样式 - 自适应不拉伸，固定比例 */
+.spot-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 图片裁剪居中，保证实景完整 */
+}
+.a{
+  text-align: center;
+  font-weight: bold;
+}
+.b{
+  color: #444;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>常州简介</h1>
+    </div>
+    <img src="img/20.jpg" alt="" class="movie-cover">
+    <p><strong>基本概况：</strong>常州古称毗陵、武进，京杭大运河穿城而过，境内全长约 44 公里，流经常州市区（天宁、钟楼）、武进区；现辖 5 区 1 市（天宁、钟楼、新北、武进、金坛，溧阳），总面积 4372 平方公里，2024 年末常住人口 538.60 万人，城镇化率 79.00%。</P>
+ <p><strong>地理位置：</strong>地处江苏省南部、长三角腹地，北纬 31°09′至 32°04′、东经 119°08′至 120°12′，东与无锡相邻，西与南京、镇江接壤，南与无锡、安徽宣城交界，与上海、南京两大都市等距相望，区位交通优势显著。</p>
+ <p><strong>历史文化：</strong>常州有 3200 多年历史，春秋末期季札封邑延陵，开启 2500 多年准确纪年的建城史，隋文帝开皇九年始称常州，历朝均为郡、州、路、府治所。这里是吴文化重要发源地之一，明清时纺织、梳篦业鼎盛，“宫梳名篦” 成为非遗瑰宝。孕育了瞿秋白、张太雷两位无产阶级革命家，还有唐荆川、赵元任、周有光等名士，青果巷被誉为 “江南名士第一巷”，留存 30 余处名人故居。</p>
+ <p><strong>经济发展：</strong>是长三角先进制造业基地，以高端装备、新能源、石墨烯为三大地标产业，光伏、动力电池产业规模居全国前列，石墨烯产业形成完整产业链。2024 年经济稳步增长，产业转型持续深化，大力发展数字经济、智能制造、生物医药等新兴产业，推动先进制造业与现代服务业深度融合，民营经济活力充沛，获评中国智能制造标杆城市。</p>
+<p><strong>自然环境：</strong>地处太湖平原，地势平坦开阔，河网密布，京杭大运河穿城而过，太湖西氿、滆湖等湖泊分布境内，水资源丰富。属亚热带季风气候，四季分明，雨量充沛。南部有低山丘陵，茅山主体山脉位于金坛区，主峰海拔 372.5 米，溧阳境内天目湖流域生态环境优良，森林覆盖率较高，全市生态绿地布局均衡，是苏南生态宜居城市。</p>
+<p><strong>旅游资源：</strong>拥有 5A 级景区 3 家，春秋淹城旅游区以近 3000 年的三城三河形制为特色，是全国重点文物保护单位；环球恐龙城为国家级科普教育基地，中华恐龙馆收藏中国系列恐龙化石最集中。天目湖旅游景区涵盖山水园、南山竹海、御水温泉，天宁禅寺为江南佛教四大禅林之一，天宁宝塔创多项全国之最。还有青果巷、篦箕巷、东坡公园等运河文化景点，以及茅山、太湖湾等自然生态景区。</p>
+<p><strong>城市荣誉：</strong>国家历史文化名城、中国优秀旅游城市、国家生态园林城市、国家卫生城市、国家环保模范城市，获评中国智能制造名城、中国石墨烯创新之都、长三角最具活力城市，蝉联全国文明城市。</p>
+<div class="header">
+  <h2>必游景点</h2>
+</div>
+<div class="spots-list">
+<div class="spot-card">
+  <img src="img/21.jpg" alt="" class="spot-img">
+<p class="a">青果巷历史文化街区</p>
+<p>“江南名士第一巷”，唐荆川、赵元任、周有光等故居集聚，“1+7+N” 名士博物馆群落，粉墙黛瓦、花窗回廊，非遗梳篦与文创融合。</p></p>
+</div>
+
+<div class="spot-card">
+  <img src="img/22.jpg" alt="" class="spot-img">
+<p class="a">篦箕巷</p>
+	<p class="b">明清梳篦业中心，“宫梳名篦” 发源地，古运河畔的 “花市街”，现存近水阁、文亨桥，夜景灯笼倒映运河。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/23.jpg" alt="" class="spot-img">
+<p class="a">奔牛古镇</p>
+	<p>江南运河最古老的码头之一，“奔牛堰” 为古代水利枢纽，老街保留明清商铺，镇志记载 “奔牛” 得名源于春秋范蠡牵牛治水传说。</p>
+</div>
+
+<div class="spot-card">
+<img src="img/24.jpg" alt="" class="spot-img">
+<p class="a">东坡公园</p>
+	<p>纪念苏轼 11 次到常州，舣舟亭、洗砚池、御碑亭等，运河绕园而过，亭台水榭兼具豪放与婉约。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/25.jpg" alt="" class="spot-img">
+<p class="a">红梅公园</p>
+	<p>常州 “城市绿肺”，红梅阁、文笔塔为地标，紧邻天宁寺，春季赏梅、秋季观菊，免费开放。</p>
+</div>
+
+</div>
+  <h2>经典游玩路线</h2>
+ <div class="">
+                    <h3 class="">一日精华游（名士文化 + 市井烟火）</h3>
+                    <ul class="">
+                        <li class=""><span class=“”>1.</span><span>08:30-11:00 青果巷，访名士故居、逛梳篦非遗店，看 “1+7+N” 博物馆</span></li>
+                        <li class=""><span class=““>2.</span><span>11:30-13:00 篦箕巷吃常州麻糕、虾饼，沿运河漫步</span></li>
+                        <li class=““><span class=“”>3.</span><span>13:30-15:30 东坡公园 + 红梅公园，赏园林、登文笔塔</span></li>
+                        <li class=““><span class=““>4.</span><span>16:00-18:00 奔牛古镇，访古码头、逛老街，感受运河原始市井</span></li>
+                        <li class=“”><span class=“”>5.</span><span>18:30 后 运河五号创意街区，看工业遗存改造，打卡文创市集与夜景</span></li>
+                    </ul>
+                </div>
+          <div class="“">
+          	    <h3 class="“">常州经典二日游（市区文脉 + 恐龙园，适合首次到访）</h3>
+          	    <p class="“">Day 1 龙城文脉线：青果巷 → 天宁禅寺 + 天宁宝塔 → 红梅公园 → 双桂坊美食街 → 运河五号创意街区夜游</p>
+          	    <p class="“">Day 2 恐龙狂欢线：中华恐龙园（全天） → 迪诺水镇 → 返程</p>
+          	</ul>
+          </div>
+          <div class="“">
+              <h3 class="“">常州深度三日游</h3>
+              <p class="“">Day 1 龙城文脉线：青果巷 → 天宁禅寺 + 天宁宝塔 → 红梅公园 → 双桂坊美食街 → 运河五号创意街区夜游</p>
+              <p class="“">Day 2 恐龙狂欢线：中华恐龙园（全天） → 迪诺水镇 → 返程</p>
+              <p class="“">Day3 天目湖 + 南山竹海</p>
+          </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

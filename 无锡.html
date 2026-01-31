@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>无锡段（千里运河独一环）</title>
+  <style>
+    /* 保留你原有的 body 样式，若需要优化图片显示可添加以下样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* 核心背景属性：确保图片完整显示 */
+      background-image: url(img/徐州底板.png); /* 你的图片路径 */
+      background-size: contain; /* 关键：按图片原始比例缩放，确保完整显示（不裁剪） */
+      background-position: center center; /* 图片在页面水平+垂直居中 */
+      background-attachment: fixed; /* 可选：滚动页面时图片固定不动（类似视差效果） */
+      min-height: 100vh; 
+    }
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景，提升文字可读性 */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+        .movie-cover {
+      width: 80%; /* 统一宽度，可根据需求调整 */
+      height: auto; /* 保持宽高比，避免变形 */
+      display: block; /* 消除图片默认 inline 带来的空隙 */
+      margin: 0 auto 30px; /* 水平居中 + 底部间距 */
+      border-radius: 4px; /* 可选：添加轻微圆角 */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 可选：添加阴影增强立体感 */
+    }
+    .header h1,h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+   /* 景点卡片列表 - 自动适配多屏，一行4张，响应式缩为2张/1张 */
+.spots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/* 景点卡片核心样式 */
+.spot-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* 鼠标悬浮动效 */
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+/* 景点图片样式 - 自适应不拉伸，固定比例 */
+.spot-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 图片裁剪居中，保证实景完整 */
+}
+.a{
+  text-align: center;
+  font-weight: bold;
+}
+.b{
+  color: #444;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>镇江简介</h1>
+    </div>
+    <img src="img/30.jpg" alt="" class="movie-cover">
+    <p><strong>基本概况：</strong>无锡古称梁溪、金匮，京杭大运河抱城而过形成 “千里运河独一环” 的奇观，境内全长约 40 公里，流经市区（梁溪、滨湖）、新吴区；现辖 5 区 2 市（梁溪、锡山、惠山、滨湖、新吴，江阴、宜兴），总面积 4627.47 平方公里，常住人口 749.08 万，是国务院批复的长三角中心城市之一。</p>
+ <p><strong>历史文化：</strong>无锡有 3000 多年建城史，是吴文化的重要发源地，明清时成为漕运与米市重镇，“布码头”“丝码头”“钱码头” 闻名全国，清名桥历史街区保留完整的 “一河两街” 运河格局。这里人文荟萃，孕育了顾恺之、徐霞客、钱钟书等名家，苏轼、文天祥等文人曾在此留迹，黄埠墩更是集历史、文化、禅意于一体的运河地标，近代民族工商业在此萌芽，是中国民族工商业的发祥地之一。</p>
+ <p><strong>经济发展：</strong>经济实力雄厚，是长三角先进制造业核心城市，以集成电路、新能源、高端装备制造为三大支柱产业，集成电路产业规模居全国前列，光伏、动力电池产业全球领先。2024 年经济持续稳健增长，数字经济、生物医药、航空航天等新兴产业快速发展，现代服务业与先进制造业融合发展，民营经济发达，福布斯中国 “大陆最佳商业城市” 排名常年位居前列，科技进步贡献率保持全省领先。</p>
+<p><strong>自然环境：</strong>地处太湖平原，地势低平，河网密布，北临长江、南拥太湖，京杭大运河形成独特的环城水系，湖荡、湿地资源丰富。属亚热带季风气候，四季分明，雨量充沛，太湖风光旖旎，惠山、锡山等低山丘陵点缀境内，森林覆盖率较高，生态环境优良，拥有蠡湖国家湿地公园、长广溪国家湿地公园等生态景区。</p>
+<p><strong>旅游资源：</strong>以 “运河环 + 太湖湾” 为文旅双 IP，清名桥历史文化街区被誉为 “江南水弄堂，运河绝版地”，南长街、南下塘保留明清运河风貌，夜景游船体验绝佳。惠山古镇有 118 座明清祠堂，密度全国第一，寄畅园为江南古典园林经典，借景惠山、锡山成传世之作。还有鼋头渚、蠡园等太湖名景，鼋头渚樱花为全国知名景观，以及东林书院、徐霞客故居等历史文化景点。</p>
+<p><strong>城市荣誉：</strong>国家历史文化名城、中国优秀旅游城市、国家森林城市、国家园林城市、国家环保模范城市、国家卫生城市，获评国际花园城市、中国内地宜居城市第一位、全国文明城市群、中国十大创新城市，是国家传感网高技术产业基地、国家文化出口基地。</p>
+<div class="header">
+  <h2>必游景点</h2>
+</div>
+<div class="spots-list">
+<div class="spot-card">
+  <img src="img/31.jpg" alt="" class="spot-img">
+<p class="a">清名桥历史文化街区</p>
+<p>“江南水弄堂，运河绝版地”，南长街、南下塘 “一河两街”，清名桥、伯渎港桥等古桥横跨，窑群遗址、老茶馆、老字号密集，夜景游船体验佳。</p></p>
+</div>
+
+<div class="spot-card">
+  <img src="img/32.jpg" alt="" class="spot-img">
+<p class="a">黄埠墩</p>
+	<p class="b">运河中的 “孤岛古刹”，传为苏轼泊舟、文天祥留诗之地，小巧玲珑，禅意悠远。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/33.jpg" alt="" class="spot-img">
+<p class="a">南长街</p>
+	<p>清名桥街区核心商业街，明清民居与现代文创共生，美食、手作、民宿云集，适合夜游。</p>
+</div>
+
+<div class="spot-card">
+<img src="img/34.jpg" alt="" class="spot-img">
+<p class="a">寄畅园</p>
+	<p>惠山古镇内的江南名园，康熙、乾隆南巡必游，借景惠山、锡山，“八音涧”“美人石” 为园林经典。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/35.jpg" alt="" class="spot-img">
+<p class="a">惠山古镇</p>
+	<p>祠堂群与老街交融，118 座明清祠堂密度全国第一，非遗泥人、惠山油酥、豆腐花为特色。</p>
+</div>
+
+
+</div>
+  <h2>经典游玩路线</h2>
+ <div class="">
+                    <h3 class="">一日精华游（汉风+山水）</h3>
+                    <ul class="">
+                        <li class=""><span class=“”>1.</span><span>09:00-11:30 清名桥街区 + 南长街，逛古桥、看窑群、尝小吃</span></li>
+                        <li class=""><span class=““>2.</span><span>12:00-13:30 南下塘吃无锡酱排骨、清水油面筋，临河小坐</span></li>
+                        <li class=““><span class=“”>3.</span><span>14:00-16:00 寄畅园 + 惠山古镇，赏园林借景、访祠堂文化</span></li>
+                        <li class=““><span class=““>4.</span><span>16:30-18:00 黄埠墩 + 运河游船，看 “独一环” 河道与城市天际线</span></li>
+                        <li class=“”><span class=“”>5.</span><span>18:30 后 清名桥夜景游船，灯笼倒影与桥洞光影交织</span></li>
+                    </ul>
+                </div>
+                <div class="“">
+                	    <h3 class="“">经典二日游（太湖精华 + 运河古韵，首次必选）</h3>
+                	    <p class="“">Day 1：鼋头渚 → 惠山古镇（含寄畅园、天下第二泉） → 南长街 / 清名桥古运河夜游</p>
+                	    <p class="“">Day 2：灵山胜境 → 拈花湾禅意小镇 → 返程 / 市区采购</p>
+                	</ul>
+                </div>
+                <div class="“">
+                    <h3 class="“">深度 3 日游（2 日基础上，节奏放缓）</h3>
+                    <p class="“">Day 1：鼋头渚 → 惠山古镇（含寄畅园、天下第二泉） → 南长街 / 清名桥古运河夜游</p>
+                    <p class="“">Day 2：灵山胜境 → 拈花湾禅意小镇 → 返程 / 市区采购</p>
+                    <p class="“">Day3：蠡园 → 东林书院 → 无锡博物院 → 小娄巷历史文化街区</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

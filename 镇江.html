@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>镇江段（江南运河起点）</title>
+  <style>
+    /* 保留你原有的 body 样式，若需要优化图片显示可添加以下样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* 核心背景属性：确保图片完整显示 */
+      background-image: url(img/徐州底板.png); /* 你的图片路径 */
+      background-size: contain; /* 关键：按图片原始比例缩放，确保完整显示（不裁剪） */
+      background-position: center center; /* 图片在页面水平+垂直居中 */
+      background-attachment: fixed; /* 可选：滚动页面时图片固定不动（类似视差效果） */
+      min-height: 100vh; 
+    }
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景，提升文字可读性 */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+        .movie-cover {
+      width: 80%; /* 统一宽度，可根据需求调整 */
+      height: auto; /* 保持宽高比，避免变形 */
+      display: block; /* 消除图片默认 inline 带来的空隙 */
+      margin: 0 auto 30px; /* 水平居中 + 底部间距 */
+      border-radius: 4px; /* 可选：添加轻微圆角 */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 可选：添加阴影增强立体感 */
+    }
+    .header h1,h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+   /* 景点卡片列表 - 自动适配多屏，一行4张，响应式缩为2张/1张 */
+.spots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/* 景点卡片核心样式 */
+.spot-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* 鼠标悬浮动效 */
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+/* 景点图片样式 - 自适应不拉伸，固定比例 */
+.spot-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 图片裁剪居中，保证实景完整 */
+}
+.a{
+  text-align: center;
+  font-weight: bold;
+}
+.b{
+  color: #444;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>镇江简介</h1>
+    </div>
+    <img src="img/10.jpg" class="movie-cover">
+    <p><strong>基本概况：</strong>镇江古称京口、润州，是江南运河与长江十字交汇的漕运咽喉，京杭大运河境内全长 42.6 公里，流经市区（京口、润州）、丹阳市；现辖 3 区 3 市（丹徒、京口、润州，丹阳、句容、扬中），总面积 3840 平方公里，常住人口 322.8 万，拥有镇江经开区、镇江高新区 2 个国家级开发区。 <p><strong>地理位置：</strong>位于江苏省西北部，地处苏鲁皖三省交界，黄淮平原东南部，是江苏的北大门，素有 “五省通衢” 之称。</p>
+ <p><strong>历史文化：</strong>镇江有 3000 多年建制史，西周时为 “宜” 地，春秋称朱方、战国名谷阳、秦为丹徒、三国定名京口，北宋起正式称镇江，1929-1949 年曾为江苏省政府所在地。这里是国务院第二批国家历史文化名城，军事地位险要，从赤壁之战发轫到渡江战役，均为兵家必争之地，镇江保卫战的英勇事迹获恩格斯高度评价。文化积淀深厚，诞生《文心雕龙》《昭明文选》《梦溪笔谈》等传世佳作，李白、王安石、辛弃疾等文人墨客在此留下千古名句，还孕育了茅以升、马相伯等名家。</p>
+ <p><strong>经济发展：</strong>2024 年完成地区生产总值 5540 亿元，增长 5.9%。产业以装备制造、新材料、航运物流为核心支柱，同时依托江河航运优势发展临港经济，大力培育新能源、数字经济等新兴产业，深耕船舶海工、高端装备制造等特色领域，是长江经济带重要的工贸港口城市。</p>
+<p><strong>自然环境：</strong>地处苏南丘陵与长江平原过渡带，地势略有起伏，宁镇山脉贯穿境内。境内河流 60 余条，长江流经 103.7 公里，京杭大运河在谏壁与长江交汇，水系分沿江、太湖湖西、秦淮河三大片区，水库、塘坝总库容量 5 亿多立方米。矿产资源丰富，石灰石储量 30 多亿吨，膨润土储量居全国第三；生物资源多样，有宝华玉兰等珍稀植物，长江段分布刀鱼、中华鲟等水生生物，鸟类超百种。</p>
+<p><strong>旅游资源：</strong>坐拥金山、焦山、北固山 “三山” 名景，西津渡古街保留从三国到民国的街巷肌理，昭关石塔、救生会等国保单位密集，京口闸遗址为江南运河起点标志。金山景区是 “白娘子水漫金山” 传说发源地，焦山景区藏有《瘗鹤铭》等书法珍品，还有南山国家森林公园、宝华山国家森林公园等自然生态景点，文旅融合 “江河文化” 特色鲜明。</p>
+<p><strong>城市荣誉：</strong>国家历史文化名城、中国优秀旅游城市、国家园林城市、国家环保模范城市、国家卫生城市，获评长三角最具投资价值城市，是长江经济带重要的绿色发展示范城市。</p>
+<div class="header">
+  <h2>必游景点</h2>
+</div>
+<div class="spots-list">
+<div class="spot-card">
+  <img src="img/11.jpg" alt="" class="spot-img">
+<p class="a">谏壁船闸</p>
+<p>江南运河入江口门、国家一级船闸，见证 “黄金水道” 航运繁忙，是运河水利工程的活化石。</p></p>
+</div>
+
+<div class="spot-card">
+  <img src="img/12.jpg" alt="" class="spot-img">
+<p class="a">西津渡古街</p>
+	<p class="b">“一眼看千年” 的古渡遗址，从三国到民国的街巷肌理完整，昭关石塔、救生会、英国领事馆旧址等国保密集，夜景灯笼璀璨，文创小店与老字号林立。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/13.jpg" alt="" class="spot-img">
+<p class="a">京口闸遗址</p>
+	<p>江南运河起点标志，唐宋至明清的漕运枢纽遗存，展示古代闸坝技术与城市水运格局。</p>
+</div>
+
+<div class="spot-card">
+<img src="img/14.jpg" alt="" class="spot-img">
+<p class="a">金山景区</p>
+	<p>“寺裹山” 的典范，金山寺、慈寿塔闻名，“白娘子水漫金山” 传说发源地，登塔俯瞰长江与运河交汇。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/15.jpg" alt="" class="spot-img">
+<p class="a">焦山景区</p>
+	<p>“山裹寺” 的清幽，碑林藏《瘗鹤铭》等书法珍品，定慧寺古雅，长江中唯一四面环水的游览岛屿。</p>
+</div>
+
+
+</div>
+  <h2>经典游玩路线</h2>
+ <div class="">
+                    <h3 class="">镇江一日精华游（汉风+山水）</h3>
+                    <ul class="">
+                        <li class=""><span class=“”>1.</span><span>09:00-11:30 金山景区，登塔观江、访寺听禅</span></li>
+                        <li class=""><span class=““>2.</span><span>12:00-13:30 西津渡古街吃锅盖面、肴肉，逛老字号</span></li>
+                        <li class=““><span class=“”>3.</span><span>14:00-16:00 西津渡深度游，看昭关石塔、救生会，访英国领事馆旧址</span></li>
+                        <li class=““><span class=““>4.</span><span>16:30-18:00 京口闸遗址 + 滨江绿道，看运河起点与江景</span></li>
+                        <li class=“”><span class=“”>5.</span><span>18:30 后 西津渡夜景，打卡文创小店与灯光秀</span></li>
+                    </ul>
+					</div>
+				<div class="“">
+					    <h3 class="“">镇江经典二日游（三山一渡 + 核心人文）</h3>
+					    <p class="“">Day 1：金山 → 西津渡古街（午餐 + 下午逛） → 北固山 → 西津渡夜游</p>
+					    <p class="“">Day 2：焦山 → 镇江博物馆 → 恒顺醋文化博物馆 → 返程</p>
+					</ul>
+                </div>
+                <div class="“">
+                    <h3 class="“">镇江深度三日游（二日基础上 + 南山 / 梦溪园 / 赛珍珠故居）</h3>
+                    <p class="“">Day 1：金山 → 西津渡古街（午餐 + 下午逛） → 北固山 → 西津渡夜游</p>
+                    <p class="“">Day 2：焦山 → 镇江博物馆 → 恒顺醋文化博物馆 → 返程</p>
+                    <p class="“">Day 3：南山国家森林公园 → 梦溪园 → 赛珍珠故居 → 返程 / 市区悠闲逛吃</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

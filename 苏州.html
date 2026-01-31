@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>苏州段（江南运河江苏终点）</title>
+  <style>
+    /* 保留你原有的 body 样式，若需要优化图片显示可添加以下样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* 核心背景属性：确保图片完整显示 */
+      background-image: url(img/徐州底板.png); /* 你的图片路径 */
+      background-size: contain; /* 关键：按图片原始比例缩放，确保完整显示（不裁剪） */
+      background-position: center center; /* 图片在页面水平+垂直居中 */
+      background-attachment: fixed; /* 可选：滚动页面时图片固定不动（类似视差效果） */
+      min-height: 100vh; 
+    }
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景，提升文字可读性 */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+        .movie-cover {
+      width: 80%; /* 统一宽度，可根据需求调整 */
+      height: auto; /* 保持宽高比，避免变形 */
+      display: block; /* 消除图片默认 inline 带来的空隙 */
+      margin: 0 auto 30px; /* 水平居中 + 底部间距 */
+      border-radius: 4px; /* 可选：添加轻微圆角 */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 可选：添加阴影增强立体感 */
+    }
+    .header h1,h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+   /* 景点卡片列表 - 自动适配多屏，一行4张，响应式缩为2张/1张 */
+.spots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/* 景点卡片核心样式 */
+.spot-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* 鼠标悬浮动效 */
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+/* 景点图片样式 - 自适应不拉伸，固定比例 */
+.spot-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 图片裁剪居中，保证实景完整 */
+}
+.a{
+  text-align: center;
+  font-weight: bold;
+}
+.b{
+  color: #444;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>苏州简介</h1>
+    </div>
+    <img src="img/40.jpg" alt="" class="movie-cover">
+    <p><strong>基本概况：</strong>苏州古称姑苏、平江，是江南运河江苏段终点，运河北起相城区望亭，南至吴江区桃源苏浙界，境内全长约 82 公里，流经相城、姑苏、吴中、吴江等区域；现辖 5 区 4 市（姑苏、虎丘、吴中、相城、吴江，常熟、张家港、昆山、太仓），总面积 8657.32 平方公里，常住人口 1291.1 万人，是长三角重要的中心城市之一。</P>
+ <p><strong>地理位置：</strong>地处江苏省东南部、太湖平原中心，东接上海，南连浙江嘉兴、湖州，西临无锡，北依长江，京杭大运河贯穿南北，太湖环绕西、南部，是长江三角洲重要的交通节点，地处江浙沪皖四省市交界地带，区位优势得天独厚。</p>
+ <p><strong>历史文化：</strong>苏州有 2500 多年建城史，春秋时为吴国都城，是吴文化的核心发源地，隋唐后成为江南漕运重镇，明清时为全国经济文化中心之一，“水陆并行、河街相邻” 的双棋盘古城格局保留完整，是中国首批国家历史文化名城。这里园林艺术冠绝全国，昆曲、苏绣、评弹等非遗项目璀璨，孕育了范仲淹、唐寅、文徵明等名家，张继《枫桥夜泊》让枫桥成为千古文化符号，运河沿线的盘门、宝带桥等遗存见证了水运繁华。</p>
+ <p><strong>经济发展：</strong>经济总量长期位居江苏省首位，是中国经济最活跃的城市之一，以电子信息、装备制造、生物医药、新材料为四大支柱产业，集成电路、新能源、航空航天等新兴产业发展迅猛，外资经济与民营经济协同发展，县域经济实力强劲，昆山、张家港等县级市常年位居全国百强县前列。2024 年经济持续高质量增长，数字经济与实体经济深度融合，高端制造、现代服务业成为经济增长核心动力，外贸进出口规模稳居全国前列。</p>
+<p><strong>自然环境：</strong>地处太湖平原，地势低平，河网密度全国第一，素有 “东方水城” 之称，京杭大运河贯穿境内，太湖三分之二水域位于苏州，阳澄湖、金鸡湖等湖泊星罗棋布。属亚热带季风气候，四季分明，雨量充沛，土壤肥沃，物产丰富，是著名的 “鱼米之乡”。全市生态环境优良，森林覆盖率较高，湿地公园、自然保护区布局合理，太湖流域生态保护成效显著，山水城林湖融为一体。</p>
+<p><strong>旅游资源：</strong>是世界文化遗产城市，拥有古典园林 9 处（拙政园、留园、网师园等），运河沿线有枫桥、盘门、宝带桥、平江路等知名景点，宝带桥为中国现存最长的多孔石拱桥。还有周庄、同里、甪直等江南水乡古镇，金鸡湖、太湖湖滨国家湿地公园等自然生态景区，山塘街、观前街等特色商业街，文旅融合 “园林 + 运河 + 古镇” 的独特魅力，是中国热门旅游目的地。
+</p>
+<p><strong>城市荣誉：</strong>中国首批国家历史文化名城、世界文化遗产城市、国家生态园林城市、国家森林城市、国家卫生城市，蝉联全国文明城市，获评中国最具幸福感城市、中国优秀旅游城市、国际花园城市，是长三角一体化发展的重要节点城市、中国智能制造 2025 试点示范城市。</p>
+<div class="header">
+  <h2>必游景点</h2>
+</div>
+<div class="spots-list">
+<div class="spot-card">
+  <img src="img/41.jpg" alt="" class="spot-img">
+<p class="a">枫桥景区</p>
+<p>“五古”（寒山古寺、江枫古桥、铁铃古关、枫桥古镇、古运河）免费开放，《枫桥夜泊》实景地，听钟声、看夜泊，感受江南乡愁。</p></p>
+</div>
+
+<div class="spot-card">
+  <img src="img/42.jpg" alt="" class="spot-img">
+<p class="a">宝带桥</p>
+	<p class="b">中国现存最长的多孔石拱桥（53 孔），始建于唐，为漕运纤道与泄洪枢纽，“苏州运河十景” 之一，桥身轻盈如带。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/43.jpg" alt="" class="spot-img">
+<p class="a">盘门景区</p>
+	<p>“水陆城门并立” 的唯一遗存，吴门桥、瑞光塔、古运河码头，登城看 “三重环水” 防御体系，感受春秋吴都气势。</p>
+</div>
+
+<div class="spot-card">
+<img src="img/44.jpg" alt="" class="spot-img">
+<p class="a">平江路历史街区</p>
+	<p>苏州古城的 “活化石”，石板路、小桥流水、明清民居，评弹、昆曲、苏式小吃（桂花糕、糖粥）云集，免费开放。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/45.jpg" alt="" class="spot-img">
+<p class="a">吴门望亭</p>
+	<p>江南运河苏州段起点，古长洲苑、月城、皇亭碑等遗存，稻香小镇与运河公园融合，“吴门烟水第一镇”。</p>
+</div>
+
+  <div class="spot-card">
+    <img src="img/46.jpg" alt="" class="spot-img">
+<p class="a">平望・四河汇集</p>
+	<p>吴江运河枢纽，京杭大运河、太浦河、頔塘河、烂溪塘四河交汇，安德桥、古粮仓见证水运繁华。</p>
+  </div> 
+  
+</div>
+  <h2>经典游玩路线</h2>
+ <div class="">
+                <div class="“">
+                    <h3 class="“">二日深度游（全覆盖）</h3>
+                    <p class="“">DAY1  古城运河线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“"></span><span>09:00-11:30 盘门景区 + 吴门桥，看水陆城门与运河码头</span></li>
+                        <li class="“"><span class="“"></span><span>12:00-13:30 平江路吃苏式面、糖粥，逛评弹茶馆</span></li>
+						<li class="“"><span class="“"></span><span>14:00-16:30 平江路 + 拙政园，感受 “咫尺之内再造乾坤” 的园林艺术</span></li>
+						<li class="“"><span class="“"></span><span>17:00-18:30 枫桥景区，听寒山寺钟声、看古运河夜泊</span></li>
+						<li class="“"><span class="“"></span><span>19:00 后 山塘街夜景，灯笼与河灯相映，尝桂花酒</span></li>
+						
+                    </ul>
+                    <p class="“">DAY2 运河终点 + 古镇线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“"></span><span>09:00-11:30 吴门望亭，逛稻香公园、运河百诗碑廊</span></li>
+                        <li class="“"><span class="“"></span><span>12:00-13:30 望亭吃水乡菜，尝稻鸭共生米</span></li>
+						<li class="“"><span class="“"></span><span>14:00-16:30 平望・四河汇集，看安德桥、古粮仓，登楼观四河交汇</span></li>
+						<li class="“"><span class="“"></span><span>17:00-18:30 宝带桥，看 53 孔石拱桥落日余晖，访纤道遗址</span></li>
+						<li class="“"><span class="“"></span><span>返程前购采芝斋糖果、陆稿荐酱肉等苏式特产</span></li>
+                    </ul>
+                </div>
+                </div>
+          
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

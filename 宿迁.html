@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宿迁</title>
+  <style>
+   
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景，提升文字可读性 */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+        .movie-cover {
+      width: 80%; /* 统一宽度，可根据需求调整 */
+      height: auto; /* 保持宽高比，避免变形 */
+      display: block; /* 消除图片默认 inline 带来的空隙 */
+      margin: 0 auto 30px; /* 水平居中 + 底部间距 */
+      border-radius: 4px; /* 可选：添加轻微圆角 */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 可选：添加阴影增强立体感 */
+    }
+    .header h1,h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+   /* 景点卡片列表 - 自动适配多屏，一行4张，响应式缩为2张/1张 */
+.spots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/* 景点卡片核心样式 */
+.spot-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* 鼠标悬浮动效 */
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+/* 景点图片样式 - 自适应不拉伸，固定比例 */
+.spot-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 图片裁剪居中，保证实景完整 */
+}
+.a{
+  text-align: center;
+  font-weight: bold;
+}
+.b{
+  color: #444;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>宿迁简介</h1>
+    </div>
+    <img src="img/宿迁底板.png" alt="" class="movie-cover">
+    <p><strong>基本概况：</strong>宿迁古称下相、宿豫，1996 年 7 月设立地级市，是国家历史文化名城，拥有 5 万年前 “下草湾人” 活动遗迹和 8000 多年顺山集文化史。全市总面积 8524 平方公里，常住人口 498 万，现辖 2 区（宿城、宿豫）、3 县（沭阳、泗阳、泗洪）以及宿迁经济技术开发区、湖滨新区、苏宿工业园区、洋河新区四个功能区，享有 “名酒之乡”“水产之乡”“花木之乡”“杨树之乡” 的美誉。</P>
+ <p><strong>地理位置：</strong>位于江苏省北部，地处淮海经济带、沿海经济带、沿江经济带交叉辐射区，东与淮安、连云港接壤，西与安徽省宿州、蚌埠相邻，北依沂沭泗水系，南濒淮河，是苏皖边界重要交通节点。</p>
+ <p><strong>历史文化：</strong>作为西楚霸王项羽故里，宿迁承载着 “力拔山兮气盖世” 的英雄文脉，乾隆皇帝六下江南五次驻跸，赞其为 “第一江山春好处”。境内有项王故里、顺山集文化遗址、松林庄古猿化石遗址等历史遗存，还是革命老区，人民炮兵奠基人朱瑞诞生于此，彭雪枫等上万名先烈长眠境内。</p>
+ <p><strong>经济发展：</strong>坚持工业强市战略，构建机电装备、绿色食品、绿色家居、高端纺织、光伏新能源、新材料六大支柱产业体系，“615” 产业体系加快成型。2024 年地区生产总值达 4801.85 亿元，增长 6.9%，规上工业总产值、工业开票销售收入双双突破 5000 亿元，数字经济核心产业产值超 1200 亿元，全国城市排名 “十三五” 以来攀升 23 个位次。</p>
+<p><strong>自然环境：</strong>地势西北高、东南低，以黄泛冲积平原为主，间有零星剥蚀残丘，最高点海拔 71.2 米。作为全国唯一拥有 “两湖两河”（洪泽湖、骆马湖、大运河、古黄河）地理标识的地级市，水域面积占比 24%，林木覆盖率 29.88%，属暖温带半湿润季风气候，四季分明、雨水丰沛。</p>
+<p><strong>旅游资源：</strong>拥有项王故里国家 4A 级景区，集中展现西楚文化风貌；洪泽湖湿地景区是国家级自然保护区，生态景观独特；还有三台山国家森林公园、洋河酒厂文化旅游区等，自然景观与人文底蕴交相辉映。</p>
+<p><strong>城市荣誉：</strong>以全国第一的成绩创成并蝉联全国文明城市，跻身全国首批社会信用体系建设示范城市、全国法治政府建设示范市，先后获批中国人居环境奖城市、国家生态园林城市，政务服务效能位居全省前列，获评中国改革 2023 年度地方全面深化改革市域案例。</p>
+<div class="header">
+  <h2>必游景点</h2>
+</div>
+<div class="spots-list">
+<div class="spot-card">
+  <img src="img/项王.jpg" alt="" class="spot-img">
+<p class="a">项王故里</p>
+<p>楚霸王项羽的出生地，仿汉建筑群气势恢宏，尽显楚风汉韵，是感受英雄文化的必访之地。</p></p>
+</div>
+
+<div class="spot-card">
+  <img src="img/三台山.jpg" alt="" class="spot-img">
+<p class="a">三台山国家森林公园</p>
+	<p class="b">“最美的生态，永远的时尚”，万亩花海、镜湖倒影，是亲子游、休闲度假的绝佳选择。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/洪泽湖.jpg" alt="" class="spot-img">
+<p class="a">洪泽湖湿地</p>
+	<p>国家级自然保护区，芦苇丛生、鸟类云集，可乘游船探秘湿地风光，感受生态之美。</p>
+</div>
+
+<div class="spot-card">
+<img src="img/龙运城.jpg" alt="" class="spot-img">
+<p class="a">皂河龙运城</p>
+	<p>以运河文化为核心的主题景区，含乾隆行宫、龙运宫等景点，非遗表演与互动体验兼具。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/乾隆.jpg" alt="" class="spot-img">
+<p class="a">乾隆行宫</p>
+	<p>清代皇家庙宇，建筑规制宏大，保存完整，是研究清代宫廷建筑与运河文化的珍贵遗存。</p>
+</div>
+
+  <div class="spot-card">
+    <img src="img/洋河.jpg" alt="" class="spot-img">
+<p class="a">洋河酒厂文化旅游区</p>
+	<p>中国白酒之都核心景区，参观百年窖池、酿酒车间，品尝原浆白酒，感受酒文化魅力。</p>
+</div>
+
+  <div class="spot-card">
+    <img src="img/古黄河.jpg" alt=""class="spot-img" >
+<p class="a">古黄河水景公园</p>
+	<p>宿迁城市绿肺，古黄河穿园而过，亭台楼阁、喷泉栈道错落有致，是市民与游客休闲散步的好去处。</p>
+  </div>
+  
+</div>
+   <h2>经典游玩路线</h2>
+ <div class="">
+                    <h3 class="">一日精华游（楚汉 + 湖光）</h3>
+                    <ul class="">
+                        <li class=""><span class=“”>1.</span><span>08:30-11:00 项王故里，逛西楚古城、项王故居，体验汉服拍照</span></li>
+                        <li class=""><span class=““>2.</span><span>11:30-13:00 项王故里附近品尝黄狗猪头肉、乾隆贡酥</span></li>
+                        <li class=““><span class=“”>3.</span><span>13:30-16:00 三台山国家森林公园，漫步衲田花海、镜湖栈道</span></li>
+                        <li class=““><span class=““>4.</span><span>16:30-18:00 骆马湖沙滩公园，看湖景日落</span></li>
+                        <li class=“”><span class=“”>5.</span><span>18:30后 宝龙 24 街夜市，尝骆马湖瓦块鱼、擀面皮</span></li>
+                    </ul>
+                </div>
+          
+                <div class="“">
+                    <h3 class="“">二日深度游（全覆盖）</h3>
+                    <p class="“">DAY1 楚汉文化专线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“">▷</span><span>三台山国家森林公园→骆马湖沙滩公园→洋河酒厂文化旅游区</span></li>
+                        <li class="“"><span class="“">▷</span><span>返程前购洋河大曲、乾隆贡酥等特产</span></li>
+                    </ul>
+                    <p class="“">DAY2  湖景 + 酒都专线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“">▷</span><span></span></li>
+                        <li class="“"><span class="“">▷</span><span></span></li>
+                    </ul>
+                </div>
+                
+                <div class="“">
+                    <h3 class="“">三日慢游（含古镇）</h3>
+                    <p class="“">DAY1 市区核心：项王故里→宿迁博物馆→东关口历史文化公园</p>
+                    <p class="“">DAY2 湖景酒都：三台山国家森林公园→骆马湖沙滩公园→洋河酒厂文化旅游区</p>
+                    <p class="“">DAY3 古镇远郊：皂河龙运城 + 乾隆行宫全天游览，逛古街、购特产，傍晚返程</p>
+                    <p class="“">提示：皂河龙运城距市区约 25 公里，建议自驾或乘公交</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

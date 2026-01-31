@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京杭大运河沿江苏段文旅资源</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .bg-container {
+            width: 100%;
+            min-height: 100vh;
+            /* 背景图位置：此处可添加背景图，示例格式如下 */
+            background-image: url(img/1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* 背景遮罩（增强文字可读性） */
+        .bg-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        /* 内容容器（叠加在背景上） */
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 导航栏样式 */
+        .nav {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            padding: 18px 30px;
+            margin-bottom: 40px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-item a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .auth-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* 页面标题样式 */
+        .page-header {
+            color: white;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 10px;
+        }
+
+        /* 内容卡片容器 */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* 内容卡片样式 */
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .content-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-header {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            padding: 8px 16px;
+            border: 2px solid #ff6b35;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .card-link:hover {
+            background-color: #ff6b35;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1. 首页 (index.html) -->
+    <div class="bg-container">
+        <div class="bg-mask"></div>
+        <div class="content-wrapper">
+            <!-- 导航栏 -->
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="首页.html">首页</a></li>
+                    <li class="nav-item"><a href="徐州.html">徐州简介</a></li>
+                    <li class="nav-item"><a href="宿迁.html">宿州简介</a></li>
+                    <li class="nav-item"><a href="淮安.html">淮安简介</a></li>
+					<li class="nav-item"><a href="扬州.html">扬州简介</a></li>
+					<li class="nav-item"><a href="镇江.html">镇江简介</a></li>
+					<li class="nav-item"><a href="常州.html">常州简介</a></li>
+					<li class="nav-item"><a href="无锡.html">无锡简介</a></li>
+					<li class="nav-item"><a href="苏州.html">苏州简介</a></li>
+                </ul>
+            </nav>
+
+            <!-- 首页内容 -->
+            <h1 class="page-header">京杭大运河沿江苏段文旅资源</h1>
+            <div class="card-container">
+                <div class="content-card">
+                    <h3 class="card-header">徐州简介</h3>
+                    <a href="徐州.html" class="card-link">查看详细文旅资源 →</a>
+                </div>
+                <div class="content-card">
+                    <h3 class="card-header">宿迁简介</h3>
+                    <a href="宿迁.html" class="card-link">查看详细文旅资源 →</a>
+                </div>
+                <div class="content-card">
+                    <h3 class="card-header">淮安简介</h3>
+                    <a href="淮安.html" class="card-link">查看详细文旅资源 →</a>
+                </div>
+				<div class="content-card">
+				    <h3 class="card-header">扬州简介</h3>
+				    <a href="扬州.html" class="card-link">查看详细文旅资源 →</a>
+				</div>
+				<div class="content-card">
+				    <h3 class="card-header">镇江简介</h3>
+				    <a href="镇江.html" class="card-link">查看详细文旅资源 →</a>
+				</div>
+				<div class="content-card">
+				    <h3 class="card-header">常州简介</h3>
+				    <a href="常州.html" class="card-link">查看详细文旅资源 →</a>
+				</div>
+				<div class="content-card">
+				    <h3 class="card-header">无锡简介</h3>
+				    <a href="无锡.html" class="card-link">查看详细文旅资源 →</a>
+				</div>
+				<div class="content-card">
+				    <h3 class="card-header">苏州简介</h3>
+				    <a href="苏州.html" class="card-link">查看详细文旅资源 →</a>
+				</div>
+			
+            </div>
+        </div>
+    </div>

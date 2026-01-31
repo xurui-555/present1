@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>淮安</title>
+  <style>
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景，提升文字可读性 */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+        .movie-cover {
+      width: 80%; /* 统一宽度，可根据需求调整 */
+      height: auto; /* 保持宽高比，避免变形 */
+      display: block; /* 消除图片默认 inline 带来的空隙 */
+      margin: 0 auto 30px; /* 水平居中 + 底部间距 */
+      border-radius: 4px; /* 可选：添加轻微圆角 */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 可选：添加阴影增强立体感 */
+    }
+    .header h1,h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+   /* 景点卡片列表 - 自动适配多屏，一行4张，响应式缩为2张/1张 */
+.spots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/* 景点卡片核心样式 */
+.spot-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* 鼠标悬浮动效 */
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+/* 景点图片样式 - 自适应不拉伸，固定比例 */
+.spot-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 图片裁剪居中，保证实景完整 */
+}
+.a{
+  text-align: center;
+  font-weight: bold;
+}
+.b{
+  color: #444;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>淮安简介</h1>
+    </div>
+    <img src="img/淮安底板.png" alt="" class="movie-cover">
+    <p><strong>基本概况：</strong>淮安古称淮阴，是国家历史文化名城，地处中国地理分界线 “秦岭 — 淮河” 线上，拥有 6000 多年青莲岗文化史。全市总面积 10030 平方公里，常住人口 452.35 万，现辖 4 区（清江浦、淮阴、淮安、洪泽）、3 县（涟水、盱眙、金湖），是淮剧、淮海戏的诞生地，素有 “中国运河之都”“伟人故里” 之称。</P>
+ <p><strong>地理位置：</strong>位于江苏省北部，东与盐城市接壤，南与扬州市和安徽省滁州市相连，西与宿迁市相接，北与连云港市毗邻，地处淮河流域中下游，是连接苏南、苏北、皖北的重要枢纽，京杭运河贯穿全境。</p>
+ <p><strong>历史文化：</strong>作为周恩来总理的故乡，淮安人文荟萃，历史上诞生了韩信、吴承恩、关天培等名人。境内运河文化遗存丰富，洪泽湖大堤、清江大闸等古运河遗址见证千年漕运繁华，青莲岗文化遗址是江淮地区新石器时代文化的代表，淮扬菜在此孕育发展，成为中国四大菜系之一。</p>
+ <p><strong>经济发展：</strong>主导产业聚焦绿色食品、新型装备制造、新一代信息技术，绿色食品产业为优势支柱，小龙虾产业入选全国优势特色产业集群，拥有淮安黑猪、淮安黄瓜等国家地理标志产品。2024 年地区生产总值达 5413.02 亿元，增长 7.1%，凹凸棒石粘土、岩盐、芒硝等矿产资源保有储量居江苏省首位。</p>
+<p><strong>自然环境：</strong>地势西高东低，平原面积占比 69.39%，西南部盱眙县多低山丘陵，最高峰狮子峰海拔 231 米。境内河网密布，属淮河流域中下游，京杭运河、淮沭河、苏北灌溉总渠等 9 条干流纵横交错，洪泽湖（中国五大淡水湖之一）、白马湖、高邮湖等湖泊点缀其间，属亚热带季风气候，日照充足、降水丰沛。</p>
+<p><strong>旅游资源：</strong>拥有周恩来故里旅游景区国家 5A 级景区，涵盖周恩来纪念馆、周恩来故居等核心景点；铁山寺国家森林公园生态原始，是天然氧吧；还有明祖陵、清晏园、洪泽湖古堰景区等，自然景观与红色文化、历史遗存相映成趣。</p>
+<p><strong>城市荣誉：</strong>先后荣获国家历史文化名城、中国优秀旅游城市、国家卫生城市、国家园林城市、国家生态文明建设示范市等称号，是全国文明城市提名城市，生态环境质量持续位居全省前列，被誉为 “宜居宜业的淮河明珠”。</p>
+<div class="header">
+  <h2>必游景点</h2>
+</div>
+<div class="spots-list">
+<div class="spot-card">
+  <img src="img/纪念馆.jpg" alt="" class="spot-img">
+<p class="a">周恩来纪念馆</p>
+<p>为纪念周恩来总理而建，建筑庄严肃穆，馆藏丰富，是爱国主义教育基地。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/故居.jpg" alt="" class="spot-img">
+<p class="a">周恩来故居</p>
+	<p class="b">总理诞生与成长之地，明清民居风格，保存完整，尽显江南民居特色。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/洪泽.jpg" alt="" class="spot-img">
+<p class="a">洪泽湖古堰景区</p>
+	<p>世界文化遗产预备名录，千年古堰绵延百里，湖光山色与人文景观交融。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/吴承恩.jpg" alt="" class="spot-img">
+<p class="a">吴承恩故居</p>
+	<p>《西游记》作者吴承恩的故居，建筑典雅，馆藏与《西游记》相关文物丰富。</p>
+</div>
+
+  <div class="spot-card">
+    <img src="img/荷花.jpg" alt="" class="spot-img">
+<p class="a">金湖荷花荡</p>
+	<p>全国最大的荷花观赏基地，万亩荷塘夏季盛开，香气扑鼻，被誉为“荷都”。</p>
+</div>
+
+  <div class="spot-card">
+    <img src="img/园.jpg" alt=""class="spot-img" >
+<p class="a">清晏园 </p>
+	<p>苏北最大的古典园林，始建于清代，亭台楼阁、曲径通幽，尽显江南园林韵味。</p>
+  </div>
+  
+  <div class="spot-card">
+    <img src="img/明1.jpg" alt="" class="spot-img">
+<p class="a">明祖陵</p>
+	<p>明太祖朱元璋祖父的陵墓，水下皇陵奇观，石像生规模宏大，极具考古价值。</p>
+  </div> 
+
+</div>
+  <h2>经典游玩路线</h2>
+ <div class="">
+                    <h3 class="">一日精华游（漕运 + 水乡）</h3>
+                    <ul class="">
+                        <li class=""><span class=“”>1.</span><span>08:30-11:00 中国漕运博物馆 + 淮安府署，了解漕运历史</span></li>
+                        <li class=""><span class=““>2.</span><span>11:30-13:00 河下古镇品尝文楼汤包、钦工肉圆</span></li>
+                        <li class=““><span class=“”>3.</span><span>13:30-16:00 河下古镇，逛吴承恩故居、状元楼</span></li>
+                        <li class=““><span class=““>4.</span><span>16:30-18:00 里运河文化长廊，看运河风光</span></li>
+                        <li class=“”><span class=“”>5.</span><span>18:30后 里运河游船，欣赏淮安夜景</span></li>
+                    </ul>
+                </div>
+          
+                <div class="“">
+                    <h3 class="“">二日深度游（全覆盖）</h3>
+                    <p class="“">DAY1 漕运文化专线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“">▷</span><span>中国漕运博物馆→淮安府署→河下古镇</span></li>
+                        <li class="“"><span class="“">▷</span><span>晚餐：河下古镇美食街，宿里运河附近</span></li>
+                    </ul>
+                    <p class="“">DAY2 伟人 + 园林专线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“">▷</span><span>周恩来纪念馆→周恩来故居→清晏园</span></li>
+                        <li class="“"><span class="“">▷</span><span>返程前购盱眙龙虾酱、茶馓等特产</span></li>
+                    </ul>
+                </div>
+                
+                <div class="“">
+                    <h3 class="“">三日慢游（含山水）</h3>
+                    <p class="“">DAY1 市区核心：中国漕运博物馆→淮安府署→河下古镇</p>
+                    <p class="“">DAY2 伟人园林：周恩来纪念馆→周恩来故居→清晏园</p>
+                    <p class="“">DAY3 山水远郊：铁山寺国家森林公园全天游览，享山林氧吧，傍晚返程</p>
+                    <p class="“">提示：铁山寺距市区约 80 公里，建议自驾或乘景区直通车</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

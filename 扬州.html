@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>扬州</title>
+  <style>
+    /* 保留你原有的 body 样式，若需要优化图片显示可添加以下样式 */  
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景，提升文字可读性 */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+        .movie-cover {
+      width: 80%; /* 统一宽度，可根据需求调整 */
+      height: auto; /* 保持宽高比，避免变形 */
+      display: block; /* 消除图片默认 inline 带来的空隙 */
+      margin: 0 auto 30px; /* 水平居中 + 底部间距 */
+      border-radius: 4px; /* 可选：添加轻微圆角 */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 可选：添加阴影增强立体感 */
+    }
+    .header h1,h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+   /* 景点卡片列表 - 自动适配多屏，一行4张，响应式缩为2张/1张 */
+.spots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/* 景点卡片核心样式 */
+.spot-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* 鼠标悬浮动效 */
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+/* 景点图片样式 - 自适应不拉伸，固定比例 */
+.spot-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 图片裁剪居中，保证实景完整 */
+}
+.a{
+  text-align: center;
+  font-weight: bold;
+}
+.b{
+  color: #444;
+}
+  </style>
+</head>
+<body>
+  <body>
+  <div class="container">
+    <div class="header">
+      <h1>扬州简介</h1>
+    </div>
+    <img src="img/扬州底板.png" alt="" class="movie-cover">
+    <p><strong>基本概况：</strong>扬州古称广陵、江都，是国家历史文化名城，迄今已有 2500 多年建城史，曾铸就两汉、隋唐、清康乾年间三次辉煌。全市总面积 6591 平方公里，户籍总人口 442.18 万，现辖 1 县（宝应）、2 市（高邮、仪征）、3 区（江都、邗江、广陵）和经济技术开发区、生态科技新城、蜀冈 — 瘦西湖风景名胜区三个功能区，享有 “世界运河之都”“世界美食之都”“东亚文化之都” 三顶国际桂冠。</p>
+<p><strong>地理位置：</strong>地处江苏省中部，长江与京杭大运河交汇处，是长江经济带重要节点城市，东接泰州，北邻淮安，西连南京，南濒长江，与镇江隔江相望，素有 “苏中门户” 之称，是南北交通要冲和商贸港口旅游城市。</p>
+<p><strong>历史文化：</strong>扬州是全国首批 24 座历史文化名城之一，李白、杜牧、欧阳修、苏轼等历代名人雅士在此留下千古名篇。扬州学派、扬州八怪、扬州戏曲、扬州工艺等文化品牌独树一帜，古琴艺术、剪纸、雕版印刷、富春茶点制作技艺 4 个项目列入联合国教科文组织 “人类非物质文化遗产代表作名录”，20 个项目列入国家级非物质文化遗产名录，现有各级文物保护单位 542 处。</p>
+<p><strong>经济发展：</strong>聚焦产业科创名城建设，构建 “6 群 13 链” 产业体系，高新技术产业产值占规上工业产值比重达 53.1%，拥有高新技术企业 2516 家、科技型中小企业 3252 家。2024 年地区生产总值 7809.64 亿元，增长 6.0%，氢能产业、新材料产业集群特色鲜明，环氧树脂、锂离子电池溶剂等产品占据全国 20% 以上市场份额。</p>
+<p><strong>自然环境：</strong>地势平坦，属长江三角洲平原区，境内河湖交织，京杭大运河穿城而过，市区建成区人均公园绿地面积达 18.39㎡，拥有 328 个免费开放公园，林木覆盖率高，属亚热带湿润季风气候，四季分明、雨热同期，生态环境秀美。</p>
+<p><strong>旅游资源：</strong>拥有瘦西湖国家 5A 级景区，是中国湖上园林的杰出代表；个园为中国四大名园之一，何园被誉为 “中国晚清第一名园”；还有大明寺、东关街历史文化街区、扬州中国大运河博物馆等景点，人文景观与自然风貌完美融合，每年吸引数千万游客前来探访。</p>
+<p><strong>城市荣誉：</strong>先后摘得联合国人居奖，蝉联全国文明城市，荣获国家环保模范城市、国家森林城市、国家卫生城市、国家园林城市、国家生态示范市等称号，城市创新能力位居国家创新型城市第 33 位，是 “人文、生态、精致、宜居” 的典范城市。</p>
+  <div class="header">
+<h2>必游景点</h2>
+</div>
+<div class="spots-list">
+
+<div class="spot-card">
+  <img src="img/瘦西湖.jpg" alt="" class="spot-img">
+<p class="a">瘦西湖</p>
+<p class="b">中国湖上园林的杰出代表，融南秀北雄于一体，二十四桥、五亭桥等景点闻名遐迩。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/个园.jpg" alt="" class="spot-img">
+<p class="a">个园</p>
+	<p class="b">中国四大名园之一，以四季假山为特色，竹影婆娑，石景奇绝，展现造园艺术的至高境界。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/荷园.jpg" alt="" class="spot-img">
+<p class="a">何园</p>
+	<p>被誉为“中国晚清第一名园”，中西合璧的建筑风格，复道回廊、片石山房堪称园林杰作。</p>
+</div>
+
+<div class="spot-card">
+<img src="img/关东.jpg" alt="" class="spot-img">
+<p class="a">东关街 </p>
+	<p>明清古街，全长1122米，汇集老字号商铺、名人故居，感受扬州古城的市井烟火与历史底蕴。</p>
+</div>
+
+<div class="spot-card">
+  <img src="img/大运河.jpg" alt="" class="spot-img">
+<p class="a">大运河博物馆</p>
+	<p>国内首座集文物保护、科研展陈、社会教育于一体的现代化运河主题博物馆，馆藏丰富。</p>
+</div>
+
+  <div class="spot-card">
+    <img src="img/大明寺.jpg" alt="" class="spot-img">
+<p class="a">大明寺</p>
+	<p>千年古刹，鉴真东渡的起点，寺内栖灵塔高耸入云，登塔可俯瞰扬州全城风光。</p>
+</div>
+
+  <div class="spot-card">
+    <img src="img/湾.jpg" alt=""class="spot-img" >
+<p class="a">茱萸湾公园</p>
+	<p>集动物观赏、植物科普、休闲游乐为一体的生态公园，有“扬州动植物园”之称。</p>
+  </div>
+  
+  <div class="spot-card">
+    <img src="img/春园.jpg" alt="" class="spot-img">
+<p class="a">冶春园</p>
+	<p>扬州古典园林与茶点文化的完美结合，临湖而建，景色清幽，是品尝早茶的绝佳去处。</p>
+  </div> 
+
+</div>
+    <h2>经典游玩路线</h2>
+ <div class="">
+                    <h3 class="">一日精华游（园林 + 古街）</h3>
+                    <ul class="">
+                        <li class=""><span class=“”>1.</span><span>08:30-11:00 个园，欣赏四季假山</span></li>
+                        <li class=""><span class=““>2.</span><span>11:30-13:00 富春茶社品尝早茶（三丁包、翡翠烧卖）</span></li>
+                        <li class=““><span class=“”>3.</span><span>13:30-16:00 东关街历史街区，逛老字号、买文创</span></li>
+                        <li class=““><span class=““>4.</span><span>16:30-18:00 扬州古运河，步行看沿岸风光</span></li>
+                        <li class=“”><span class=“”>5.</span><span>18:30后 古运河游船，欣赏扬州夜景</span></li>
+                    </ul>
+                </div>
+          
+                <div class="“">
+                    <h3 class="“">二日深度游（全覆盖）</h3>
+                    <p class="“">DAY1  园林古街专线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“">▷</span><span>个园→东关街→古运河</span></li>
+                        <li class="“"><span class="“">▷</span><span>晚餐：东关街小吃（黄桥烧饼、藕粉圆子），宿东关街附近</span></li>
+                    </ul>
+                    <p class="“">DAY2 湖景文博专线</p>
+                    <ul class="“">
+                        <li class="“"><span class="“">▷</span><span>瘦西湖→何园→扬州双博馆</span></li>
+                        <li class="“"><span class="“">▷</span><span>返程前购扬州酱菜、牛皮糖等特产</span></li>
+                    </ul>
+                </div>
+                
+                <div class="“">
+                    <h3 class="“">三日慢游（含古刹）</h3>
+                    <p class="“">DAY1 市区核心：个园→东关街→古运河</p>
+                    <p class="“">DAY2 湖景园林：瘦西湖→何园→扬州双博馆</p>
+                    <p class="“">DAY3 古刹远郊：大明寺 + 平山堂全天游览，品素斋、逛鉴真纪念堂，傍晚返程</p>
+                    <p class="“">提示：大明寺距市区约 5 公里，建议打车或乘公交</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>
